@@ -8,9 +8,10 @@ export default function BlogCardList() {
 
     return (
         <>
-            {projects.map((repo: any) => {
+            {projects.map((repo: any, index: any) => {
                 return (
                     <BlogCard
+                        key={index}
                         title={repo.title}
                         description={repo.description}
                         link={repo.link}

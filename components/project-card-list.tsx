@@ -98,9 +98,10 @@ export default function ProjectCardList({ }: Props): JSX.Element {
 
     return (
         <>
-            {projects.map((repo: any) => {
+            {projects.map((repo: any, index: any) => {
                 return (
                     <ProjectCard
+                        key={index}
                         title={repo.title}
                         description={repo.description}
                         link={repo.link}

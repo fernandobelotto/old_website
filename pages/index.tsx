@@ -71,7 +71,7 @@ export default function Index(props: NextPage) {
           first-letter:font-bold
           first-letter:mr-3
           first-letter:float-left
-          dark:text-white'>Fernando is a software developer passionated about creating unique web experiences. He's started his carrear in an software house base in Campinas city and there he work on Angular, React and Vue projects for both small and large brazilian companies. There he discover the power of web development using all sorts of libraries, patterns and techniques. After that he start working at dLocal, integrating the first brazilian team in the uruguayan compani. Fernando loves teaching so he uses his spare time to create a video tutorials or writing blog posts about his new discoveries</p>
+          dark:text-white'>Fernando is a software developer passionated about creating unique web experiences. He&apos;s started his carrear in an software house base in Campinas city and there he work on Angular, React and Vue projects for both small and large brazilian companies. There he discover the power of web development using all sorts of libraries, patterns and techniques. After that he start working at dLocal, integrating the first brazilian team in the uruguayan compani. Fernando loves teaching so he uses his spare time to create a video tutorials or writing blog posts about his new discoveries</p>
               <h1 className='text-3xl mt-10 dark:text-white'>Technologies</h1>
               <div className="mt-5 flex-row flex space-x-3  ">
                 <TechIcon Icon={SiNextdotjs} />
