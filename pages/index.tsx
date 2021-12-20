@@ -58,10 +58,10 @@ export default function Index(props: NextPage) {
               <div className="mt-10 grid sm:grid-cols-1 md:grid-cols-3 gap-5">
                 <ProjectCardList />
               </div>
-              <h1 className='text-3xl mt-10 dark:text-white'>Blog Posts</h1>
+              {/* <h1 className='text-3xl mt-10 dark:text-white'>Blog Posts</h1>
               <div className="mt-10 grid sm:grid-cols-1 md:grid-cols-3 gap-5">
                 <BlogCardList />
-              </div>
+              </div> */}
               <h1 className='text-3xl mt-10 dark:text-white'>About</h1>
               <p className='
           mt-2 
