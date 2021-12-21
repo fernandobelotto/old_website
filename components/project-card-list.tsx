@@ -46,54 +46,53 @@ export default function ProjectCardList({ }: Props): JSX.Element {
         {
             title: 'Nodejs+TS crud',
             description: 'Simple REST Api made in NodeJS 17v with typescript',
-            link: 'https://google.com'
+            link: 'https://github.com/fernandobelotto/node_ts_api'
         },
         {
             title: 'Deno crud',
             description: 'REST Api made with deno',
-            link: 'https://google.com'
+            link: 'https://github.com/fernandobelotto/deno_crud_api'
         },
-
-        {
-            title: 'Angular crud',
-            description: 'Super simple angular crud',
-            link: 'https://google.com'
-        },
-        {
-            title: 'Vue crud',
-            description: 'project description',
-            link: 'https://google.com'
-        },
-        {
-            title: 'React + Redux crud',
-            description: 'Crud project with React 17v and using Redux with Redux-Toolkit',
-            link: 'https://google.com'
-        },
-        {
-            title: 'Flutter crud',
-            description: 'Flutter 2.8v crud project ',
-            link: 'https://google.com'
-        },
-        {
-            title: 'Java Spring crud',
-            description: 'REST Api using spring spring frameworkd and mongodb',
-            link: 'https://google.com'
-        },
-        {
-            title: 'Ant Design showcase',
-            description: 'Simple react project showing the usage of some antd ui components',
-            link: 'https://google.com'
-        },
-        {
-            title: 'Python RGB Analysis',
-            description: 'Simple python project to analyze rgb data in videos',
-            link: 'https://google.com'
-        },
-        {
-            title: 'Web Animation showcase',
-            description: 'Experimentation ',
-            link: 'https://google.com'
-        },
+        // {
+        //     title: 'Angular crud',
+        //     description: 'Super simple angular crud',
+        //     link: 'https://google.com'
+        // },
+        // {
+        //     title: 'Vue crud',
+        //     description: 'project description',
+        //     link: 'https://google.com'
+        // },
+        // {
+        //     title: 'React + Redux crud',
+        //     description: 'Crud project with React 17v and using Redux with Redux-Toolkit',
+        //     link: 'https://google.com'
+        // },
+        // {
+        //     title: 'Flutter crud',
+        //     description: 'Flutter 2.8v crud project ',
+        //     link: 'https://google.com'
+        // },
+        // {
+        //     title: 'Java Spring crud',
+        //     description: 'REST Api using spring spring frameworkd and mongodb',
+        //     link: 'https://google.com'
+        // },
+        // {
+        //     title: 'Ant Design showcase',
+        //     description: 'Simple react project showing the usage of some antd ui components',
+        //     link: 'https://google.com'
+        // },
+        // {
+        //     title: 'Python RGB Analysis',
+        //     description: 'Simple python project to analyze rgb data in videos',
+        //     link: 'https://google.com'
+        // },
+        // {
+        //     title: 'Web Animation showcase',
+        //     description: 'Experimentation ',
+        //     link: 'https://google.com'
+        // },
     ]
 
     return (

@@ -55,7 +55,7 @@ export default function Index(props: NextPage) {
               </div>
               <hr className='mt-3' />
               <h1 className='text-3xl mt-10 dark:text-white'>Projects</h1>
-              <div className="mt-10 grid sm:grid-cols-1 md:grid-cols-3 gap-5">
+              <div className="mt-10 grid sm:grid-cols-1 md:grid-cols-4 gap-5">
                 <ProjectCardList />
               </div>
               {/* <h1 className='text-3xl mt-10 dark:text-white'>Blog Posts</h1>
