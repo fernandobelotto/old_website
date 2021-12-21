@@ -9,6 +9,12 @@ import ProjectCardList from '../components/project-card-list';
 import { IconLink } from '../components/icon-link';
 import { TechIcon } from '../components/tech-icon';
 
+declare global {
+  interface Window {
+    gtag?: any;
+  }
+}
+
 export default function Index(props: NextPage) {
 
   const [mode, setMode] = useState(false)
