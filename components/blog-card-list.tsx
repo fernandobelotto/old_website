@@ -3,7 +3,7 @@ import { BlogCard } from './blog-card'
 
 export default function BlogCardList() {
     const projects = [
-        { title: 'Project Title', description: 'project description', link: 'https://google.com' }
+        { title: 'Understanding React Lifecycles', description: 'Brief explanation on what is the react lifecycles', id: 'understanding-lifecycle' },
     ]
 
     return (
@@ -11,6 +11,7 @@ export default function BlogCardList() {
             {projects.map((repo: any, index: any) => {
                 return (
                     <BlogCard
+                        id={repo.id}
                         key={index}
                         title={repo.title}
                         description={repo.description}

@@ -8,6 +8,7 @@ import BlogCardList from '../components/blog-card-list';
 import ProjectCardList from '../components/project-card-list';
 import { IconLink } from '../components/icon-link';
 import { TechIcon } from '../components/tech-icon';
+import Image from 'next/image';
 
 declare global {
   interface Window {
@@ -64,10 +65,10 @@ export default function Index(props: NextPage) {
               <div className="mt-10 grid sm:grid-cols-1 md:grid-cols-4 gap-5">
                 <ProjectCardList />
               </div>
-              {/* <h1 className='text-3xl mt-10 dark:text-white'>Blog Posts</h1>
+              <h1 className='text-3xl mt-10 dark:text-white'>Blog Posts</h1>
               <div className="mt-10 grid sm:grid-cols-1 md:grid-cols-3 gap-5">
                 <BlogCardList />
-              </div> */}
+              </div>
               <h1 className='text-3xl mt-10 dark:text-white'>About</h1>
               <p className='
           mt-2 

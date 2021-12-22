@@ -8,7 +8,6 @@ export default function Layout({ children }: Props): ReactElement {
     return (
         <>
             {children}
-
         </>
     )
 }
