@@ -2,17 +2,12 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import { useState } from "react";
 import { HiMoon, HiSun } from "react-icons/hi";
-import {
-  SiCodesandbox,
-  SiVisualstudiocode,
-} from "react-icons/si";
-import BlogCardList from "../components/blog-card-list";
-import ProjectCardList from "../components/project-card-list";
-import Image from "next/image";
-import { IconList } from "../components/IconList";
-import { TechList } from "../components/TechList";
-import CrudCardList from "../components/crud-card-list";
 import AwesomeCardList from "../components/AwesomeCardList";
+import BlogCardList from "../components/blog-card-list";
+import CrudCardList from "../components/crud-card-list";
+import { IconList } from "../components/IconList";
+import ProjectCardList from "../components/project-card-list";
+import { TechList } from "../components/TechList";
 
 declare global {
   interface Window {
@@ -28,6 +23,7 @@ export default function Index(props: NextPage) {
   const toggleDarkLight = () => {
     setMode(!mode);
   };
+
   return (
     <>
       <div className={`${mode ? "" : "dark"}`}>
@@ -67,7 +63,7 @@ export default function Index(props: NextPage) {
                     dark:text-white"
               >
                 Fernando is a software developer passionated about creating
-                unique web experiences. He&apos;s started his carrear in an
+                unique web experiences. He started his carrear in an
                 software house base in Campinas city and there he work on
                 Angular, React and Vue projects for both small and large
                 brazilian companies. There he discover the power of web
@@ -89,7 +85,7 @@ export default function Index(props: NextPage) {
                 <CrudCardList />
               </div>
               <h1 className="text-3xl mt-10 dark:text-white">Awesomes Websites</h1>
-              <p className='dark:text-white'>Checkout some of the websites that i created base on 'awesome' repos using docusaurus</p>
+              <p className='dark:text-white'>Checkout some of the websites that i created base on awesome repos using docusaurus</p>
               <div className="mt-10 grid base:grid-cols-1 md:grid-cols-5 gap-5">
                 <AwesomeCardList />
               </div>
@@ -97,7 +93,6 @@ export default function Index(props: NextPage) {
               <div className="mt-10 grid sm:grid-cols-2 md:grid-cols-3 gap-5">
                 <BlogCardList />
               </div>
-
               <h1 className="text-3xl mt-10 dark:text-white">Technologies</h1>
               <TechList></TechList>
             </main>
