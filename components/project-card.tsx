@@ -5,7 +5,7 @@ export function ProjectCard({ className, title, description, link }: any) {
       target="_blank"
       rel="noreferrer"
       className={`${className} 
-    group w-100 border  border-neutral-200 text-left p-5 rounded-md  transition-all hover:bg-gray-50 hover:shadow-xl hover:ease-in-out duration-300 hover:scale-105
+    group w-100 border  border-neutral-200 text-left p-5 rounded-md  transition-all hover:bg-gray-50 hover:shadow-md hover:ease-in-out duration-300 hover:scale-105
     dark:shadow-white/20
     `}
     >

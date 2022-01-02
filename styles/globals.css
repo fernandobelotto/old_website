@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;900&display=swap");
+@import 'react-tippy/dist/tippy.css';
 
 html,
 body {
@@ -20,3 +21,10 @@ a {
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.mark {
+  background-position-y: 0;
+  background-image: linear-gradient(transparent 50%,rgb(131 134 137) 0);
+  background-size: 2px;
+  background-size: auto 140%;
+}
