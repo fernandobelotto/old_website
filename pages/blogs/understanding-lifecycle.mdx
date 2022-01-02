@@ -1,5 +1,5 @@
-import BlogLayout from '../../components/blog-layout'
-import Image from 'next/image'
+import BlogLayout from "../../components/blog-layout";
+import Image from "next/image";
 
 # What is lifecycle in React?
 
@@ -28,7 +28,7 @@ Of these methods, only the third (render) is mandatory when creating a class com
 
 The first, `constructor`, is used in React components to set the initial state value.
 
-The `getDerivedStateFromProps` method is used for one purpose only: It allows a component to update its state through a change of props. See two examples of its use [here](https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#updating-state-based-on-props) and [here](https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#fetching-external-data-when-props-change). In the following example I set the state of the counter with the value passed in the prop _start_value.
+The `getDerivedStateFromProps` method is used for one purpose only: It allows a component to update its state through a change of props. See two examples of its use [here](https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#updating-state-based-on-props) and [here](https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#fetching-external-data-when-props-change). In the following example I set the state of the counter with the value passed in the prop \_start_value.
 
 The third and only mandatory is `render`. When called, it must examine this.props and this.state and return one of the following types: a React element, a Portal, a string, a number, a boolean, or the value null. The `render` method **should remain pure**, that is, do not create side effects (such as API calls) in it.
 
@@ -80,7 +80,6 @@ If the `this.forceUpdate()` method has been called the update will not call shou
 
 With the DOM updated, the `componentDidUpdate` method is finally called.
 
-
 ```jsx:
 import React from "react";
 
@@ -130,12 +129,11 @@ class MyComponent extends React.Component {
 
 ### Legacy methods
 
-For creating confusion and some hard-to-solve bugs, some React lifecycle methods are being deprecated. In version 17 they can still be used with the UNSAFE_ prefix in front of their names. To understand more about why they are being deprecated, [see this post on the React blog](https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html)
+For creating confusion and some hard-to-solve bugs, some React lifecycle methods are being deprecated. In version 17 they can still be used with the UNSAFE\_ prefix in front of their names. To understand more about why they are being deprecated, [see this post on the React blog](https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html)
 
 1. UNSAFE_componentWillMount()
 2. UNSAFE_componentWillReceiveProps()
 3. UNSAFE_componentWillUpdate()
-
 
 export default ({ children }) => {
      return (
@@ -143,4 +141,6 @@ export default ({ children }) => {
                  {children}
              </BlogLayout>
          )
- }
+
+
+}

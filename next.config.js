@@ -3,16 +3,18 @@
 //   reactStrictMode: true,
 // }
 
-const withMDX = require('@next/mdx')({
+const withMDX = require("@next/mdx")({
   extension: /\.mdx?$/,
   options: {
     remarkPlugins: [],
     rehypePlugins: [],
   },
-})
+});
 
-const withImages = require('next-images')
+const withImages = require("next-images");
 
-module.exports = withImages(withMDX({
-  pageExtensions: ['md', 'mdx', 'tsx', 'ts'],
-}))
+module.exports = withImages(
+  withMDX({
+    pageExtensions: ["md", "mdx", "tsx", "ts"],
+  })
+);
