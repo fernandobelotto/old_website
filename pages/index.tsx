@@ -9,7 +9,7 @@ import { IconList } from "../components/IconList";
 import ProjectCardList from "../components/project-card-list";
 import { TechList } from "../components/tech-list";
 import TranslationList from "../components/translation-list";
-
+import imagePreview from '../public/images/fernando.png'
 declare global {
   interface Window {
     gtag?: any;
@@ -31,29 +31,22 @@ export default function Index(props: NextPage) {
         <div className="bg-slate-50 dark:bg-gray-900">
           <div className="p-10 container mx-auto">
             <Head>
-              <title>Fernando Belotto</title>
-              <meta name="description" content="Fernando Belotto Website" />
-              <meta property="og:URL" content="/images/life.jpeg" />
-              <meta property="og:image" content="/images/life.jpeg" />
-              <link rel="icon" href="/favicon.ico" />
-
 
               <title>Fernando Belotto</title>
               <meta name="title" content="Fernando Belotto" />
               <meta name="description" content="Software developer specialized in frontend technologies | Based in São Paulo, Brazil" />
-
+              <link rel="icon" href="/favicon.ico" />
 
               <meta property="og:type" content="website" />
               <meta property="og:url" content="https://fernandobelotto.com/" />
               <meta property="og:title" content="Fernando Belotto" />
               <meta property="og:description" content="Software developer specialized in frontend technologies | Based in São Paulo, Brazil" />
-              <meta property="og:image" content="/images/fernando.png" />
+              <meta property="og:image" content="/fernando.png" />
 
-              <meta property="twitter:card" content="summary_large_image" />
               <meta property="twitter:url" content="https://fernandobelotto.com/" />
               <meta property="twitter:title" content="Fernando Belotto" />
               <meta property="twitter:description" content="Software developer specialized in frontend technologies | Based in São Paulo, Brazil" />
-              <meta property="twitter:image" content="/images/fernando.png" />
+              <meta property="twitter:image" content="/fernando.png" />
 
             </Head>
             <main>
