@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import Image from "next/image";
 import { useState } from "react";
 import { HiMoon, HiSun } from "react-icons/hi";
 import AwesomeCardList from "../components/awesome-card-list";
@@ -9,7 +10,7 @@ import { IconList } from "../components/IconList";
 import ProjectCardList from "../components/project-card-list";
 import { TechList } from "../components/tech-list";
 import TranslationList from "../components/translation-list";
-import imagePreview from '../public/images/fernando.png'
+import imagePreview from '../public/fernando.png'
 declare global {
   interface Window {
     gtag?: any;
@@ -32,24 +33,44 @@ export default function Index(props: NextPage) {
           <div className="p-10 container mx-auto">
 
             <main>
-              <div className="flex flex-row justify-between">
-                <h1 className="text-5xl dark:text-white ">Fernando Belotto</h1>
-                <button onClick={toggleDarkLight}>
-                  {mode ? (
-                    <HiMoon className="text-4xl " />
-                  ) : (
-                    <HiSun className="text-4xl text-white" />
-                  )}
-                </button>
-              </div>
-              <h1 className="text-xl  text-gray-600 mt-3 dark:text-white">
-                Software developer specialized in frontend technologies
-              </h1>
-              <h1 className="text-xl  text-gray-600  dark:text-white">
-                Based in São Paulo, Brazil 🇧🇷
-              </h1>
 
-              <IconList />
+
+
+              <div className="flex flex-row items-center flex-wrap justify-around">
+                <Image
+                  src='/fernando.png'
+                  alt="Picture of the author"
+                  className='rounded-2xl'
+
+                  height={768 / 3}
+                  width={1024 / 3}
+                />
+                <div className="mt-5 lg:mt-0">
+
+                  <div className="flex flex-row justify-between">
+                    <h1 className="text-5xl dark:text-white ">Fernando Belotto</h1>
+                    <button onClick={toggleDarkLight}>
+                      {mode ? (
+                        <HiMoon className="text-4xl " />
+                      ) : (
+                        <HiSun className="text-4xl text-white" />
+                      )}
+                    </button>
+                  </div>
+
+                  <h1 className="text-xl  text-gray-600 mt-3 dark:text-white">
+                    Software developer specialized in frontend technologies
+                  </h1>
+                  <h1 className="text-xl  text-gray-600  dark:text-white">
+                    Based in São Paulo, Brazil 🇧🇷
+                  </h1>
+
+                  <IconList />
+                </div>
+
+              </div>
+
+
               <h1 className="text-3xl mt-10 dark:text-white">About</h1>
               <p
                 className="
