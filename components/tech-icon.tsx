@@ -7,7 +7,9 @@ export function TechIcon({ Icon, name }: any) {
       title={name}
       position="bottom"
     >
-      <Icon className="text-4xl dark:text-white hover:scale-125 ease-in-out duration-300"></Icon>
+      <div className="p-3">
+        <Icon className="text-4xl dark:text-white hover:scale-125 ease-in-out duration-300"></Icon>
+      </div>
     </Tooltip>
   );
 }

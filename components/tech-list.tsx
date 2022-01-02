@@ -16,7 +16,8 @@ import {
 import { TechIcon } from "./tech-icon";
 
 export function TechList() {
-  return (<div className="mt-5 flex-row flex space-x-3  ">
+  return (<div className="mt-5 flex flex-row flex-wrap items-end justify-start ">
+
     <TechIcon Icon={SiNextdotjs} name="Next.js" />
     <TechIcon Icon={SiGatsby} name="Gatsby" />
     <TechIcon Icon={SiReact} name="React" />
