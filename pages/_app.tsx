@@ -32,17 +32,21 @@ export default function MyApp({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <title>Fernando Belotto</title>
+        <meta name="title" content="Fernando Belotto" />
+        <meta name="description" content="Software developer specialized in frontend technologies | Based in São Paulo, Brazil" />
+        <link rel="icon" href="/favicon.ico" />
 
-        <meta property="og:URL" content="%PUBLIC_URL%/localImage.jpg" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://fernandobelotto.com/" />
+        <meta property="og:title" content="Fernando Belotto" />
+        <meta property="og:description" content="Software developer specialized in frontend technologies | Based in São Paulo, Brazil" />
+        <meta property="og:image" content="https://fernandobelotto.dev/fernando.png" />
 
-        <meta property="og:type" content="article" />
+        <meta property="twitter:url" content="https://fernandobelotto.com/" />
+        <meta property="twitter:title" content="Fernando Belotto" />
+        <meta property="twitter:description" content="Software developer specialized in frontend technologies | Based in São Paulo, Brazil" />
+        <meta property="twitter:image" content="https://fernandobelotto.dev/fernando.png" />
 
-        <meta property="og:title" content="lorem ipsum lorem ipsum" />
-
-        <meta property="og:description" content="lorem ipsum" />
-
-        <meta property="og:image" content="%PUBLIC_URL%/localImage.jpg" />
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <Script
         strategy="afterInteractive"

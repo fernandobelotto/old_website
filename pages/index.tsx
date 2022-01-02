@@ -30,25 +30,7 @@ export default function Index(props: NextPage) {
       <div className={`${mode ? "" : "dark"}`}>
         <div className="bg-slate-50 dark:bg-gray-900">
           <div className="p-10 container mx-auto">
-            <Head>
 
-              <title>Fernando Belotto</title>
-              <meta name="title" content="Fernando Belotto" />
-              <meta name="description" content="Software developer specialized in frontend technologies | Based in São Paulo, Brazil" />
-              <link rel="icon" href="/favicon.ico" />
-
-              <meta property="og:type" content="website" />
-              <meta property="og:url" content="https://fernandobelotto.com/" />
-              <meta property="og:title" content="Fernando Belotto" />
-              <meta property="og:description" content="Software developer specialized in frontend technologies | Based in São Paulo, Brazil" />
-              <meta property="og:image" content="/fernando.png" />
-
-              <meta property="twitter:url" content="https://fernandobelotto.com/" />
-              <meta property="twitter:title" content="Fernando Belotto" />
-              <meta property="twitter:description" content="Software developer specialized in frontend technologies | Based in São Paulo, Brazil" />
-              <meta property="twitter:image" content="/fernando.png" />
-
-            </Head>
             <main>
               <div className="flex flex-row justify-between">
                 <h1 className="text-5xl dark:text-white ">Fernando Belotto</h1>
