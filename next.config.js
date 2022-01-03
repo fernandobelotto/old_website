@@ -16,5 +16,9 @@ const withImages = require("next-images");
 module.exports = withImages(
   withMDX({
     pageExtensions: ["md", "mdx", "tsx", "ts"],
+    i18n: {
+      locales: ["en"],
+      defaultLocale: "en",
+    },
   })
 );
