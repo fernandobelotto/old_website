@@ -10,7 +10,7 @@ import { IconList } from "../components/IconList";
 import ProjectCardList from "../components/project-card-list";
 import { TechList } from "../components/tech-list";
 import TranslationList from "../components/translation-list";
-import imagePreview from '../public/fernando.png'
+
 declare global {
   interface Window {
     gtag?: any;
@@ -33,11 +33,7 @@ export default function Index(props: NextPage) {
         bg-gradient-to-r from-gray-100 via-gray-200 to-gray-300"
         >
           <div className="p-10 container mx-auto">
-
             <main>
-
-
-
               <div className="flex flex-row items-center flex-wrap justify-around">
                 <Image
                   src='/fernando.png'
@@ -85,15 +81,7 @@ export default function Index(props: NextPage) {
                     first-letter:float-left
                     dark:text-white"
               >
-                👨🏻‍💻 Fernando is a software developer
-                passionated about creating <strong className='font-semibold'>unique web experiences</strong>. He started his carrear in an
-                software house base in Campinas city and there he work on
-                Angular, React and Vue projects for both <strong> small and large
-                  brazilian companies</strong>. There he discover the power of web
-                development using all sorts of libraries, patterns and
-                techniques. After that he start working at dLocal, integrating
-                the first brazilian tech team in the uruguayan company.
-                Fernando focus his develeping in <strong>performance, acessibility and responsiviness</strong>
+                👨🏻‍💻 Fernando is a software developer passionate about creating unique web experiences. He started his career in a software house based in Campinas, Sao Paulo, Brazil, and there he worked with Angular, React and Vue projects for both small and large brazilian companies. There he discovered the power of web development using all sorts of libraries, patterns and techniques. After that he started working at dLocal, integrating the first brazilian tech team in the uruguayan company. Fernando focuses in performance, acessibility and responsiveness in his work.
               </p>
               <hr className="mt-3" />
               <h1 className="text-3xl mt-10 mb-3 dark:text-white">Projects </h1>
@@ -110,13 +98,14 @@ export default function Index(props: NextPage) {
 
               <h1 className="text-3xl mt-10 mb-3 dark:text-white">Translations </h1>
 
-              <p className='dark:text-white'>Check some of my translations here 👇</p>
+              <p className='dark:text-white'>Check some of my translations to the portuguese language here 👇</p>
               <div className="mt-10 grid base:grid-cols-1 md:grid-cols-5 gap-5">
                 <TranslationList />
               </div>
 
               <h1 className="text-3xl mt-10 mb-3 dark:text-white">Awesomes Websites </h1>
-              <p className='dark:text-white'>Checkout some of the websites that i created base on awesome repos using docusaurus 🗂</p>
+              <p className='dark:text-white'>Checkout some of the websites that i created base on awesome repos using <a target='_blank' rel='noopener' href='https://docusaurus.io/' className='hover:text-blue-400 transition-all ease-in-out'>docusaurus 🗂</a>
+              </p>
               <div className="mt-10 grid base:grid-cols-1 md:grid-cols-5 gap-5">
                 <AwesomeCardList />
               </div>
