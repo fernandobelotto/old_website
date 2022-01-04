@@ -29,7 +29,9 @@ export default function Index(props: NextPage) {
   return (
     <>
       <div className={`${mode ? "" : "dark"}`}>
-        <div className="bg-slate-50 dark:bg-gray-900">
+        <div className="dark:bg-gradient-to-r dark:from-gray-700 dark:via-gray-900 dark:to-black 
+        bg-gradient-to-r from-gray-100 via-gray-200 to-gray-300"
+        >
           <div className="p-10 container mx-auto">
 
             <main>
